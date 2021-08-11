@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --env=jsdom --verbose --watchAll --color"
+    "test": "jest --env=jsdom --verbose --color"
   },
   "dependencies": {
     "autoprefixer": "^10.3.1",
