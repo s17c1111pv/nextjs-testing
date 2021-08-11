@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  nextjs-testing:
+    build: ./nextjs_testing/.
+    volumes:
+      - ./nextjs_testing/app:/usr/src/app
+    #   - node_modules_volume:/usr/src/app/node_modules
+    # command: sh -c "npm run build && npm start"
+    # command: sh -c "npm run dev"
+    command: sh -c "npm test"
+    ports:
+      - "3000:3000"
+    # networks:
+    #   - frontend_network
+# volumes:
+#   node_modules_volume:
